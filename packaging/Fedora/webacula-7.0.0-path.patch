@@ -1,0 +1,11 @@
+--- html/index.php.orig	2015-04-15 13:55:01.000000000 +0200
++++ html/index.php	2015-04-15 13:55:27.000000000 +0200
+@@ -22,7 +22,7 @@ define('WEBACULA_VERSION', '7.0.0' . ', 
+ define('BACULA_VERSION', 14); // Bacula Catalog version
+ 
+ define('ROOT_DIR', dirname(dirname(__FILE__)) );
+-define('CACHE_DIR',  ROOT_DIR.'/data/cache' );
++define('CACHE_DIR', '/var/cache/webacula' );
+ 
+ defined('APPLICATION_ENV')
+     || define('APPLICATION_ENV', (getenv('APPLICATION_ENV') ? getenv('APPLICATION_ENV') : 'production'));
